@@ -1,0 +1,18 @@
+Tym razem zadanie to obsługa sklepu za pomocą wątków.
+
+Towary dostarczane do pewnego sklepu mają swoje unikalne nazwy (String). 
+Dostawa obejmuje pewną liczbę towarów. Towary mogą być dostarczane w różnej liczbie sztuk (zakładamy, że każda rzecz obsługiwana przez sklep jest łatwo policzalna np. kartony mleka, groszek w puszkach itp.)
+
+Dostawy (delivery) mogą być realizowane w dowolnej chwili. 
+Klienci (wątki) także mogą pojawiać się w dowolnym momencie i zgłaszać chęć zakupu (purchase).
+
+Zakładamy, że klient, którego zakupu nie można zrealizować gotowy jest poczekać w sklepie na najbliższą dostawę towaru, który chce nabyć. 
+Klient zaczeka nawet jeśli okaże się, że dostarczona liczba sztuk nie wystarczy aby spełnić jego potrzeby.
+
+
+Klient, który zgłasza się do sklepu po towar zawsze podaje jego nazwę oraz liczbę sztuk. 
+Jeśli towar jest znany i jest go w wystarczającej ilości, klient obsługiwany jest standardowo (metoda kończy się zwracając true). 
+Jeśli jednak zamówienia klienta nie można obsłużyć, wątek klienta ma zostać zablokowany do chwili najbliższej dostawy towaru o tej samej nazwie.
+
+Może zdarzyć się tak, że na ten sam towar czekać będzie wielu klientów. 
+Dostawa tego towaru ma doprowadzić do uwolnienia ich wątków (zakończenia blokowania metody purchase).

@@ -1,0 +1,13 @@
+Do programu docierają dane. Są to n-bitowe słowa (n < 9). Wiele z nich będzie się potwarzać. Chcemy użyć tej informacji aby dokonać bezstratnej kompresji danych. Kompresja
+
+Pomysł na skompresowanie danych jest następujący:
+
+badamy ile razy powtarza się dana sekwencja bitów (słowo)
+następnie staramy się zakodować dane tak, że najczęściej występujące słowa kodujemy używając mniejszej niż n liczby bitów, a pozostałe kodujemy używajac n+1 bitów.
+Dlaczego pozostałe słowa wymagają n+1 bitów? Bo musimy użyć jednego bitu do rozróżnienia pomiędzy sekwencjami kodującymi czesto powtarzające się słowa i resztą, która nie jest kodowana.
+
+Umawiamy się, że sekwencje kodujące powtarzające się słowa zaczynają się zawsze od 0, a pozostałe od 1.
+
+Zadanie polega na dokonaniu optymalnej kompresji przekazanego ciągu bitów. 
+Przez "optymalna kompresja" rozumiem tu, że Państwa program sprawdzi jakie sekwencje najlepiej zakodować i tak dobierze ich ilość, aby uwzględniając długość nagłówka oraz konieczność dodania dodatkowego bitu do sekwencji nie kodowanych ilość bitów potrzebnych do zapisania informacji będzie możliwie najmniejsza.
+

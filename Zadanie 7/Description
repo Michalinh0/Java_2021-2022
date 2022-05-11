@@ -1,0 +1,9 @@
+Otrzymujecie Państwo ode mnie obiekt HidingPlaceSupplierSupplier, z którego należy pobierać (get) obiekty dostarczające skrytki. 
+Każdorazowo odbieracie Państwo pojedynczy obiekt typu HidingPlaceSupplier zawierający dużą liczbę skrytek (HidingPlace). 
+Tylko część z nich coś zawiera (isPresent). Te trzeba opróżnić (openAndGetValue). 
+Po przeglądnięciu i opróżnieniu wszystkich skrytek odbieracie Państwo kolejny obiekt ze skrytkami HidingPlaceSupplier.
+
+HidingPlaceSupplierSupplier - dostarcza -> HidingPlaceSupplier - dostarcza -> HidingPlace - może-zawiera -> coś cennego
+
+Skrytki zawierają cenne przedmioty. Ich wartość trzeba podliczyć. 
+Aby uzyskać kolejny obiekt ze skrytkami trzeba podać prawidłową wartość przedmiotów ukrytych w skrytkach w poprzednim obiekcie (uwaga: pierwszy obiekt można pobrać podając wartość 0).

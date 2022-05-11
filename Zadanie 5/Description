@@ -1,0 +1,14 @@
+Zapewne używali Państwo kiedyś programu graficznego. Jedną z typowych możliwości takiego programu jest wypełnianie obszarów danym kolorem. Obszar do wypełnienia zazwyczaj jest mniejszy od całego płótna, na którym rysujemy, bo ograniczają go wcześniej naniesione kolory.
+
+Tym razem Państwa zadaniem jest napisanie klasy, której metoda pozwoli na wypełnianie obszarów zadanym kolorem.
+
+Gdzie jest haczyk? Cóż... płótno będzie posiadać wyłącznie metodę pozwalającą na pomalowanie piksela odpowiednim kolorem, ale nie będzie mieć metody umożliwiającej odczyt kolorów!
+
+
+
+Zakładamy, że będąc na pozycji [col,row] można się (próbować) przesunąć tylko na 4 pozycje sąsiednie:
+
+[ col + 1, row ]
+[ col - 1, row ]
+[ col, row - 1 ]
+[ col, row + 1 ]

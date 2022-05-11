@@ -1,0 +1,16 @@
+Zadaniem klasy będzie zapisywanie i odczytywanie z dysku zserializowanych obiektów. Powierzony klasie obiekt ma zostać zapisany na dysku i uzyskać identyfikator liczbowy pozwalający na jego odzyskanie. 
+Identyfikator będzie zwracany użytkownikowi klasy. Aby zadanie dostosować do nowych realiów dodana została obsługa bazy danych, wyjątku oraz typu Optional.
+
+Baza danych :
+
+Baza danych ma pozwolić na przechowanie informacji o zapisanych obiektach pomiędzy uruchomieniami programu. Czyli, ma być możliwe zapisanie obiektów na dysku (a w bazie informacji o miejscu ich zapisania) i po ponownym uruchomieniu programu odzyskanie zapisanych obiektów.
+
+Sama baza danych w momencie dostarczenia Państwu dostępu do niej (a stanie się to na początku pracy programu), będzie zawierać dwie tabele (Katalogi i Pliki) o następującej postaci:
+
+|        Katalogi      |            |            Pliki            |
+| idKatalogu | katalog |            | idPliku | idKatalogu | plik |
+|            |         |            |         |            |      |
+Tabela Katalogi będzie wypełniona danymi, których nie należy modyfikować. Tabela Pliki będzie pusta i do Państwa dyspozycji - to w niej należy zachować informacje o zapisywanych na dysku plikach.
+
+Uwaga: pola idKatalogu i idPliku będą typu Integer. Pola katalog i plik będą typu String.
+
